@@ -24,12 +24,10 @@ def calculate_total_price(quantity, customer_type):
 
 # Test cases
 test_cases = [
-    (-5, "Khách thường"),   # Số lượng sản phẩm ít hơn 10, khách hàng thường
-    (15, "Khách thường"),  # Số lượng sản phẩm từ 10-20, khách hàng thường
-    (25, "Khách thường"),  # Số lượng sản phẩm lớn hơn 20, khách hàng thường
-    (8, "Khách VIP"),      # Số lượng sản phẩm ít hơn 10, khách hàng VIP
-    (18, "Khách VIP"),     # Số lượng sản phẩm từ 10-20, khách hàng VIP
-    (30, "Khách VIP")      # Số lượng sản phẩm lớn hơn 20, khách hàng VIP
+    (-2, "Khách VIP"),   # Số lượng sản phẩm ít hơn 10, khách hàng thường
+    (12, "Khách thường"),  # Số lượng sản phẩm từ 10-20, khách hàng thường
+    (22, "Khách VIP"),  # Số lượng sản phẩm lớn hơn 20, khách hàng thường
+    (2, "Khách VIP")  # Số lượng sản phẩm lớn hơn 20, khách hàng VIP
 ]
 
 # Kiểm thử các test case và in kết quả
