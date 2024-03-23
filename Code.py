@@ -1,9 +1,9 @@
 def calculate_total_price(quantity, customer_type):
-    # Giá mỗi sản phẩm
-    unit_price = 10
-    
+    if quantity < 0:
+        print("Invalid: Số lượng sản phẩm không hợp lệ")
+        return None
     # Tính tổng tiền trước khi áp dụng chiết khấu
-    total_price = quantity * unit_price
+    total_price = quantity * 10
     
     # Áp dụng chiết khấu cho số lượng sản phẩm mua
     if 10 <= quantity <= 20:
@@ -24,7 +24,7 @@ def calculate_total_price(quantity, customer_type):
 
 # Test cases
 test_cases = [
-    (5, "Khách thường"),   # Số lượng sản phẩm ít hơn 10, khách hàng thường
+    (-5, "Khách thường"),   # Số lượng sản phẩm ít hơn 10, khách hàng thường
     (15, "Khách thường"),  # Số lượng sản phẩm từ 10-20, khách hàng thường
     (25, "Khách thường"),  # Số lượng sản phẩm lớn hơn 20, khách hàng thường
     (8, "Khách VIP"),      # Số lượng sản phẩm ít hơn 10, khách hàng VIP
