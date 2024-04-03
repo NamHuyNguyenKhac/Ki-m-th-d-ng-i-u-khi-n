@@ -82,6 +82,7 @@ test_cases_boundary_VIP = [
 ]
 
 print(" ")
+
 print("Kiểm thử theo giá trị biên")
 # Kiểm thử các test case và in kết quả
 print("Kiểm thử theo giá trị biên khách thường")
@@ -91,7 +92,7 @@ for i, (quantity, customer_type) in enumerate(test_cases_boundary_normal, start=
         print(f"Test Case 1.{i}: Invalid input: Quantity = {quantity}, CustomerType = {customer_type}")
     else:
         print(f"Test Case 1.{i}: Quantity: {quantity}, CustomerType: {customer_type}, Total Price: ${total_price}")
-
+print(" ")
 print("Kiểm thử theo giá trị biên khách VIP")
 for i, (quantity, customer_type) in enumerate(test_cases_boundary_VIP, start=1):
     total_price = calculate_total_price(quantity, customer_type)
